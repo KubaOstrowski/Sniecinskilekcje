@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div id="container">
+<header>PORTAL FANÓW WYŚCIGÓW MOTORYZACYJNYCH</header>
+<nav>
+<ol>
+<li><a href="index.html">Strona główna</a></li>
+<li>F1
+<ul>
+<li><a href="#">Fernando Alonso</a></li>
+<li><a href="#">Robert Kubica</a></li>
+<li><a href="#">Nico Rosberg</a></li>
+<li><a href="#">Emerson Fittipaldi</a></li>
+<li><a href="#">Ayrton Senna</a></li>
+</ul>
+</li>
+<li><a href="#">WRC</a></li>
+<li><a href="#">MotoGP</a>
+<ul>
+<li><a href="#">VR46</a></li>
+<li><a href="#">MM93</a></li>
+<li><a href="#">Sic58</a></li>
+<li><a href="#">KA17</a></li>
+<li><a href="#">CC35</a></li>
+</ul>
+</li>
+<li><a href="logowanie.php">Zaloguj się</a></li>
+</ol>
+</nav>
+<div id="content">
+    <?php
+    $pass = "haslo";
+    $user = "user";
+
+    if(isset($_POST["login"])) $login = $_POST["login"];
+    else $login = "anonymus";
+    if(isset($_POST["haslo"])) $haslo = $_POST["haslo"];
+    else $login = "wrong";
+
+    if($login == $user && $haslo == $pass)
+    {
+
+    }
+    else
+    {
+        echo "Niepoprawny login lub hasŁo:";
+        echo "<form action=\"logowanie.php\">";
+        echo "<input type=\"submit\" value=\"Wróć do logowania\"/>";
+        echo "<form>";
+    }
+    ?>
+</div>
+<footer>&copy;&nbsp;Moto<span id="red">Race</span>&nbsp;2017</footer>
+</div>
+
+</body>
+</html>
