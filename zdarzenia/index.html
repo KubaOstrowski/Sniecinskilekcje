@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zdarzenia</title>
+</head>
+<body>
+    <button onclick="this.innerHTML = 'Klikłeś mnie!!!!'">Kliknij mnie</button><br/>
+    <a href="usun.php?akcja=kasuj&id=idrekordu" onclick="return confirm('Jesteś pewien?')">Usuń rekord</a>
+    <!--
+        ondbclick
+        onmousedown - wciśnięcie klawisza myszki
+        onmouseup - zwolnienie klawisza myszki
+
+        onmouseover - kursor myszki znalazł się w obszarze obiektu
+        onmouseout - zjazd z obiektu
+        onmousemove - kursor myszki został przesunięty
+        
+        Parametry zdarzeń dostępne poprzez obiekt event:
+        clientX, clientY - względne współrzędne kursora myszki
+        screenX i screenY ekranowe (bezwzględne)
+        button - numer klawisza myszki który był użyty var numer = event.button;
+        altKey - czy klawisz Alt został wciśnięty
+        ctrlKey - czy klawisz Ctrl został wciśnięty
+        shiftKey - czy klawisz Shift został wciśnięty
+
+        Zdarzenia klawiatury
+            onkeypress - kllawisz alfanumeryczny został wciśnięty
+            onkeydown - klawisz został naciśnięty
+            onkeyup - klawisz został zwolniony
+
+            altKey, ctrlKey, shiftKey
+
+            keyCode
+
+        <body onload="">
+        <body onunload="">
+
+    
+<script>
+    var klawisz = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+</script>
+
+<form action="index.php" method="post" onsubmit="return sprawdzFormularz(this)" onreset="">
+    onfocus - kontrolka otrzymała fokus
+    onblur - kontrolka staciła fokus
+    onselect - kontrolka została wybrana
+    onchange - zawartość kontrolki zmieniła się
+</form>
+-->
+
+</body>
+</html>
