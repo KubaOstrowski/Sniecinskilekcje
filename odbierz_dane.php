@@ -23,6 +23,15 @@
         $klasa = $_POST["klasa"];
         echo $klasa;
     }
+    if(isset($_POST["owoce"]))
+    {
+        echo "Wybrałeś następujące owoce:<br />";
+        $ile = count($_POST["owoce"]);
+        for($i=0;$i<$ile;$i++)
+        {
+            echo $_POST["owoce"]["$i"]
+        }
+    }
     ?>
 </body>
 </html>
