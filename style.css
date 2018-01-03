@@ -1,0 +1,32 @@
+#container{
+    height: 600px;
+    width: 1000px;
+}
+
+#header{
+    height: 50px;
+    width: 1000px;
+    background-color: blue;
+}
+
+#menu{
+    height: 500px;
+    width: 200px;
+    background-color: yellow;
+    float: left;
+}
+
+#content{
+    height: 460px;
+    width: 760px;
+    background-color: green;
+    float: left;
+    padding: 20px;
+}
+
+#footer{
+    height: 50px;
+    width: 1000px;
+    background-color: red;
+    clear: both;
+}
